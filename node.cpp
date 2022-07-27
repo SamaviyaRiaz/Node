@@ -53,10 +53,7 @@ class Node
 			return head;
 		}
 		Node* getLastElement(Node* head){
-			Node* temp=head;
-			while(temp != NULL)
-			temp=temp->getNext();
-			return temp;
+			return getNthElement(head,getNodeLength(head));
 		}
 
 int main()
